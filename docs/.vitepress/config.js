@@ -10,7 +10,7 @@ export default defineConfig({
     themeConfig: {
         logo: "/logo.svg",
         nav: [
-            { text: "首页", link: "/" },
+            { text: "首页11", link: "/" },
             { text: "我的笔记", link: "/daily/" },
             { text: "前端总结", link: "/javascript/" },
             { text: "生活感悟", link: "/life/" },
