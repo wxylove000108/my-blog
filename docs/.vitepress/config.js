@@ -3,7 +3,7 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
     title: "我爱希希",
     description: "hello world",
-    base: "/docs/",
+    base: "/",
 
     head: [["link", { rel: "icon", type: "image/svg+xml", href: "logo.svg" }]],
     lastUpdated: true,
