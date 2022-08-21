@@ -16,7 +16,7 @@ hero:
       link: /daily/
     - theme: alt
       text: 访问我的GitHub
-      link: https://github.com/aehyok
+      link: https://github.com/wxylove000108
     - theme: alt
       text: 关于我
       link: /me/

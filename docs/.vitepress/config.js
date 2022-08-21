@@ -14,10 +14,10 @@ export default defineConfig({
             { text: "我的笔记", link: "/daily/" },
             { text: "前端总结", link: "/javascript/" },
             { text: "生活感悟", link: "/life/" },
-            { text: "我的掘金", link: "https://juejin.cn/user/2242659452477016" },
+            { text: "我的掘金", link: "https://juejin.cn/user/3483706528631166" },
             { text: "关于我", link: "/me/" },
         ],
-        socialLinks: [{ icon: "github", link: "https://github.com/aehyok" }],
+        socialLinks: [{ icon: "github", link: "https://github.com/wxylove000108" }],
         footer: {
             message: "Released under the MIT License.",
             copyright: "Copyright © 2022-07-27～present aehyok",
