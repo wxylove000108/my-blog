@@ -1,3 +1,13 @@
+/*
+ * @Author: 王鑫宇 937219635@qq.com
+ * @Date: 2022-08-21 11:21:28
+ * @LastEditors: 王鑫宇 937219635@qq.com
+ * @LastEditTime: 2022-08-23 14:59:52
+ * @FilePath: \blog-mine\docs\.vitepress\config.js
+ * @Description: 
+ * 
+ * Copyright (c) 2022 by 王鑫宇 937219635@qq.com, All Rights Reserved. 
+ */
 import { defineConfig } from "vitepress";
 
 export default defineConfig({
@@ -5,7 +15,9 @@ export default defineConfig({
     description: "hello world",
     base: "/",
 
-    head: [["link", { rel: "icon", type: "image/svg+xml", href: "logo.svg" }]],
+    head: [
+        ["link", { rel: "icon", type: "image/svg+xml", href: "logo.svg" }]
+    ],
     lastUpdated: true,
     themeConfig: {
         logo: "/logo.svg",
@@ -20,33 +32,28 @@ export default defineConfig({
         socialLinks: [{ icon: "github", link: "https://github.com/wxylove000108" }],
         footer: {
             message: "Released under the MIT License.",
-            copyright: "Copyright © 2022-07-27～present aehyok",
+            copyright: "Copyright © 2022-07-27～present 王鑫宇",
         },
 
         sidebar: {
-            "/life/": [
-                {
-                    text: '生活感悟',
-                    items: [
-                        { text: "社会", link: "/life/" },
-                        { text: "社会", link: "/life/" },
-                        { text: "2022-06年中总结", link: "/life/2022-06" },
-                        { text: "2021-12年终总结", link: "/life/2021-12" },
-                    ]
-                }
-            ],
-            "/javascript/": [
-                {
-                    text: 'JavaScript积累',
-                    items: [
-                        { text: "社会", link: "/javascript/" },
-                        { text: "2022-06年中总结", link: "/life/2022-06" },
-                        { text: "2021-12年终总结", link: "/life/2021-12" },
-                    ]
-                }
-            ],
-            "/daily/": [
-                {
+            "/life/": [{
+                text: '生活感悟',
+                items: [
+                    { text: "社会", link: "/life/" },
+                    { text: "社会", link: "/life/" },
+                    { text: "2022-06年中总结", link: "/life/2022-06" },
+                    { text: "2021-12年终总结", link: "/life/2021-12" },
+                ]
+            }],
+            "/javascript/": [{
+                text: 'JavaScript积累',
+                items: [
+                    { text: "社会", link: "/javascript/" },
+                    { text: "2022-06年中总结", link: "/life/2022-06" },
+                    { text: "2021-12年终总结", link: "/life/2021-12" },
+                ]
+            }],
+            "/daily/": [{
                     text: "2022年每日笔记",
                     items: [
                         { text: "current", link: "/daily/" },
