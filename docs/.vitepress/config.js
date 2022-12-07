@@ -9,14 +9,24 @@
  * Copyright (c) 2022 by 王鑫宇 937219635@qq.com, All Rights Reserved. 
  */
 import { defineConfig } from "vitepress";
+import mdItCustomAttrs  from 'markdown-it-custom-attrs'
+
 
 export default defineConfig({
-    title: "我爱希希",
+    title: "Record",
     description: "hello world",
     base: "/",
-
+    markdown:{
+       config:(md) => {
+        md.use(mdItCustomAttrs,'image',{
+        'data-fancybox':"gallery"
+        })
+    }
+    },
     head: [
-        ["link", { rel: "icon", type: "image/svg+xml", href: "logo.svg" }]
+        ["link", { rel: "icon", type: "image/svg+xml", href: "logo.svg" }],
+        ["link",{ rel: "stylesheet", href: "https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" }],
+        ["script", { src: "https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js" }],
     ],
     lastUpdated: true,
     themeConfig: {
@@ -54,34 +64,9 @@ export default defineConfig({
                 ]
             }],
             "/daily/": [{
-                    text: "2022年每日笔记",
+                    text: "",
                     items: [
-                        { text: "current", link: "/daily/" },
-                        { text: "2022-08", link: "/daily/2022-08" },
-                        { text: "2022-07", link: "/daily/2022-07" },
-                        { text: "2022-06", link: "/daily/2022-06" },
-                        { text: "2022-05", link: "/daily/2022-05" },
-                        { text: "2022-04", link: "/daily/2022-04" },
-                        { text: "2022-03", link: "/daily/2022-03" },
-                        { text: "2022-02", link: "/daily/2022-02" },
-                        { text: "2022-01", link: "/daily/2022-01" },
-                    ],
-                },
-                {
-                    text: "2021年每日笔记",
-                    items: [
-                        { text: "2021-12", link: "/daily/2021-12" },
-                        { text: "2021-11", link: "/daily/2021-11" },
-                        { text: "2021-10", link: "/daily/2021-10" },
-                        { text: "2021-09", link: "/daily/2021-09" },
-                        { text: "2021-08", link: "/daily/2021-08" },
-                        { text: "2021-07", link: "/daily/2021-07" },
-                        { text: "2021-06", link: "/daily/2021-06" },
-                        { text: "2021-05", link: "/daily/2021-05" },
-                        { text: "2021-04", link: "/daily/2021-04" },
-                        { text: "2021-03", link: "/daily/2021-03" },
-                        { text: "2021-02", link: "/daily/2021-02" },
-                        { text: "2021-01", link: "/daily/2021-01" },
+                        { text: "unocss安装与使用", link: "/daily/" },
                     ],
                 },
             ],

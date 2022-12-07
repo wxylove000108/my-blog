@@ -9,9 +9,12 @@
     "docs:serve": "vitepress serve docs"
   },
   "devDependencies": {
-    "vitepress": "^1.0.0-alpha.9",
-    "vue": "^3.2.37",
+    "axios": "^0.27.2",
     "sass": "^1.53.0",
-    "axios": "^0.27.2"
+    "vitepress": "^1.0.0-alpha.9",
+    "vue": "^3.2.37"
+  },
+  "dependencies": {
+    "markdown-it-custom-attrs": "^1.0.2"
   }
 }

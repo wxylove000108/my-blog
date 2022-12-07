@@ -4,8 +4,8 @@ layout: home
 title: Home
 
 hero:
-  name: 二胖坨希
-  text: 学习使我快乐
+  name: blog
+  text: ''
   tagline: Believe in yourself, there's nothing you can't do！
   image:
     src: /home.svg
